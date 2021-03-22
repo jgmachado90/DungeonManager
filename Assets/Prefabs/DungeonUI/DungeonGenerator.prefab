@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1653717151155989535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1653717151155989522}
+  - component: {fileID: 1653717151155989520}
+  m_Layer: 0
+  m_Name: DungeonGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1653717151155989522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653717151155989535}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.4, y: -11.75, z: 0}
+  m_LocalScale: {x: 0.3376, y: 0.3376, z: 0.3376}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1653717151155989520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653717151155989535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f977dc20e8ef3a44f81e2418022cf978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstCell: {fileID: 0}
+  dungeonCellPrefab: {fileID: 7700304045385481950, guid: f3e0c1c2a5f91ee468f0f47605e2cbc1,
+    type: 3}
+  dungeonSpriteBattle1: {fileID: 21300000, guid: fa6242dc1bb5e4c459e036b6c720715b,
+    type: 3}
+  dungeonSpriteBattle2: {fileID: 21300000, guid: c0f49f553e8264b40ad1cacb367b5f95,
+    type: 3}
+  dungeonSpriteBattle3: {fileID: 21300000, guid: 5d10f4e5ef086594d98ad937c71bee4b,
+    type: 3}
+  dungeonSpriteBoss: {fileID: 21300000, guid: c4ae368cff83c7e47b7721bfcbb5df7c, type: 3}
+  dungeonSpriteArrow: {fileID: 21300000, guid: 3f20e46825118c540bb006d4468bf227, type: 3}
+  dungeonSpriteChest: {fileID: 21300000, guid: 46704f2d3df92aa4a96060fa6c4c354e, type: 3}
+  maxDepth: 10
