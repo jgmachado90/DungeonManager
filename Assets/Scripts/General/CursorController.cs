@@ -46,25 +46,20 @@ public class CursorController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (SceneManager.instance.currentScene == SceneManager.CurrentScene.Town);
             DetectObject();
     }
 
     private void StartedClick()
     {
-     //   Debug.Log("Click");
+        
     }
 
     private void EndedClick()
     {
-    //    Debug.Log("EndedClick");
-        if (SceneManager.instance.currentScene == SceneManager.CurrentScene.Town)
-        {
-            DetectUIBuilding();
-        }
+            DetectClick();
     }
 
-    private void DetectUIBuilding()
+    private void DetectClick()
     {
         Ray ray = mainCamera.ScreenPointToRay(Controls.Mouse.Position.ReadValue<Vector2>());
         RaycastHit hit;
@@ -72,11 +67,12 @@ public class CursorController : MonoBehaviour
         {
             if (hit.collider != null)
             {
-                if (hit.collider.tag == "Quests")
+                IClickable clickable = hit.transform.GetComponent<IClickable>();
+                if(clickable != null)
                 {
-                    SceneManager.instance.LoadQuestScene();
+                    clickable.OnClick();
                 }
-                UIController.instance.EnableObjectUI(hit.collider.gameObject);
+              
             }
 
         }

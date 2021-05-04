@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd06dc33c505224397dc36d682c6c2b, type: 3}
+  m_Name: Fighter
+  m_EditorClassIdentifier: 
+  entityName: CassiBoy
+  profileImage: {fileID: 21300000, guid: 10caf61b55c7bfd45ad17e95343a3f1a, type: 3}
+  _health: 200
+  _attack: 10
+  _velocity: 15
+  _defense: 15
+  _dodge: 10
+  _lucky: 5
+  prefab: {fileID: 779717566107711144, guid: b8d8a277db8d7b44586ee37938b70bd4, type: 3}

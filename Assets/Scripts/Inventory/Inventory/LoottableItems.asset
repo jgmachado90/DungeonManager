@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c30062b141bfa43a94266446e70393, type: 3}
+  m_Name: LoottableItems
+  m_EditorClassIdentifier: 
+  container:
+  - item: {fileID: 11400000, guid: e414125750ebb0045878a465d75412a3, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: afcae7c2f68373b498c05da4a8b75cd6, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: e5ad8eecf399bcd4c933d3e90580b175, type: 2}
+    amount: 1
