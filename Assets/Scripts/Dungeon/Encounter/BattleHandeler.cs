@@ -12,7 +12,6 @@ public class BattleHandeler : MonoBehaviour
         {
             int rNGDamage = Random.Range(0, 10);
             entity.TakeDamage(rNGDamage);
-            Debug.Log(entity.name + "RECEIVED " + rNGDamage + " DAMAGE");
         }
 
         _onEntityTakeDamage.Raise();

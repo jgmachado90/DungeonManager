@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class House : Building
 {
-    
+    public override void OnClick()
+    {
+        OnClickMe.Raise();
+    }
 }

@@ -54,6 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2927985837719968878}
   - component: {fileID: 6273369676168853335}
+  - component: {fileID: 441853603}
   m_Layer: 0
   m_Name: EnemyTeamHandeler
   m_TagString: Untagged
@@ -91,6 +92,62 @@ MonoBehaviour:
   possibleEnemyTeams:
   - {fileID: 11400000, guid: 6c737c2c5d2bbb84faf4f01c4015017f, type: 2}
   currentEnemyTeam: {fileID: 5583614763792878775}
+--- !u!114 &441853603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6482745736401657168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b159b266b3911ac4fa5977132396d39b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 362a59737168559409a0d2408af149c4, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6273369676168853335}
+        m_TargetAssemblyTypeName: EnemyTeamHandeler, Assembly-CSharp
+        m_MethodName: GenerateEnemyTeam
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &989142835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7708452145604845087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b159b266b3911ac4fa5977132396d39b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 94cefb150c317154e91fc2d06bbb6baa, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7708452145604845153}
+        m_TargetAssemblyTypeName: LootHandeler, Assembly-CSharp
+        m_MethodName: CurrentLootClear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7708452145724711172
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,6 +314,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7708452145724711175}
     m_Modifications:
+    - target: {fileID: 5902513332223963781, guid: aef0daac137e9a14a8511843e1ce5eb8,
+        type: 3}
+      propertyPath: unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GiveLoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902513332223963782, guid: aef0daac137e9a14a8511843e1ce5eb8,
+        type: 3}
+      propertyPath: OnLoot
+      value: 
+      objectReference: {fileID: 11400000, guid: 2fa699c2c6151b24981419934078e325,
+        type: 2}
+    - target: {fileID: 5902513332223963782, guid: aef0daac137e9a14a8511843e1ce5eb8,
+        type: 3}
+      propertyPath: currentLoot
+      value: 
+      objectReference: {fileID: 11400000, guid: 271bf7d19fae58542a97d78e38ba71d9,
+        type: 2}
     - target: {fileID: 5902513332223963783, guid: aef0daac137e9a14a8511843e1ce5eb8,
         type: 3}
       propertyPath: m_RootOrder
@@ -319,9 +393,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef0daac137e9a14a8511843e1ce5eb8, type: 3}
+--- !u!1 &7708452145604845087 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5902513332223963896, guid: aef0daac137e9a14a8511843e1ce5eb8,
+    type: 3}
+  m_PrefabInstance: {fileID: 4255933503434697959}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7708452145604845152 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5902513332223963783, guid: aef0daac137e9a14a8511843e1ce5eb8,
     type: 3}
   m_PrefabInstance: {fileID: 4255933503434697959}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7708452145604845153 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5902513332223963782, guid: aef0daac137e9a14a8511843e1ce5eb8,
+    type: 3}
+  m_PrefabInstance: {fileID: 4255933503434697959}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7708452145604845087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b56f454820a6842b52a51978a0d13a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entityName: Goblin
   profileImage: {fileID: 0}
-  _health: 100
+  _health: 50
   _attack: 5
   _velocity: 5
   _defense: 5

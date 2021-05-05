@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,6 +28,10 @@ public class InventorySO : ScriptableObject
         }
     }
 
+    internal void Clear()
+    {
+        container.Clear();
+    }
 }
 
 [System.Serializable]
