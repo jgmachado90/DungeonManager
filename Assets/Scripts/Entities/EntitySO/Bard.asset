@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Bard
   m_EditorClassIdentifier: 
   entityName: Vinnie
-  profileImage: {fileID: 21300000, guid: 1238ce745cda1c649907b37708e78b20, type: 3}
+  profileImage: {fileID: -5612250113705054379, guid: 42bc21672551a464a9773da6d5bec7e9,
+    type: 3}
   _health: 300
   _attack: 5
   _velocity: 20

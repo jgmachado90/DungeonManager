@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Goblin
   m_EditorClassIdentifier: 
   entityName: Goblin
-  profileImage: {fileID: 0}
+  profileImage: {fileID: 21300000, guid: 115883098df4879469c2c355ac9e24bf, type: 3}
   _health: 50
   _attack: 5
   _velocity: 5

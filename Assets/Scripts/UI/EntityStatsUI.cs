@@ -27,6 +27,8 @@ public class EntityStatsUI : MonoBehaviour
     public Text DefenseText;
     public Text DodgeText;
 
+    public Image image;
+
     public void UpdateEntityStats()
     {
         if(_myEntity != null)
@@ -41,7 +43,9 @@ public class EntityStatsUI : MonoBehaviour
                 SpeedText.text = MyEntity.attackSpeed.ToString();
             if (DodgeText != null)
                 DodgeText.text = MyEntity.dodge.ToString();
-          
+            if (image != null)
+                image.sprite = MyEntity.profileImage;
+
         }
     }
 

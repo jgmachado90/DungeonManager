@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Fighter
   m_EditorClassIdentifier: 
   entityName: CassiBoy
-  profileImage: {fileID: 21300000, guid: 10caf61b55c7bfd45ad17e95343a3f1a, type: 3}
+  profileImage: {fileID: -4021609950642536946, guid: 42bc21672551a464a9773da6d5bec7e9,
+    type: 3}
   _health: 200
   _attack: 10
   _velocity: 15

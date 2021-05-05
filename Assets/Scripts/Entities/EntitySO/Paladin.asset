@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Paladin
   m_EditorClassIdentifier: 
   entityName: Tavinho
-  profileImage: {fileID: 21300000, guid: c667074a47531274a9e6e5adeda5d323, type: 3}
+  profileImage: {fileID: 5124648974400824178, guid: 42bc21672551a464a9773da6d5bec7e9,
+    type: 3}
   _health: 500
   _attack: 50
   _velocity: 5

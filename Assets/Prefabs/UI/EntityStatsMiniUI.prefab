@@ -219,6 +219,7 @@ MonoBehaviour:
   SpeedText: {fileID: 0}
   DefenseText: {fileID: 0}
   DodgeText: {fileID: 0}
+  image: {fileID: 6485989313248566371}
 --- !u!114 &1669679187090569667
 MonoBehaviour:
   m_ObjectHideFlags: 0

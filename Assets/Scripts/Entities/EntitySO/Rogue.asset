@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Rogue
   m_EditorClassIdentifier: 
   entityName: Perdinho
-  profileImage: {fileID: 21300000, guid: 30f369ea3aafa164d9d1ca54df324f4a, type: 3}
+  profileImage: {fileID: 6130361684689799794, guid: 42bc21672551a464a9773da6d5bec7e9,
+    type: 3}
   _health: 100
   _attack: 10
   _velocity: 30
