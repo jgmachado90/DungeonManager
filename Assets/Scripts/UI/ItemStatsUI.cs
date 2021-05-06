@@ -21,6 +21,7 @@ public class ItemStatsUI : MonoBehaviour
 
     public Text nameText;
     public Text itemInfoText;
+    public Image itemInfoImage;
 
     public void UpdateItemStats()
     {
@@ -30,6 +31,8 @@ public class ItemStatsUI : MonoBehaviour
                 nameText.text = MyItem.item.name;
             if (itemInfoText != null)
                 itemInfoText.text = MyItem.item.description;
+            if (itemInfoImage != null)
+                itemInfoImage.sprite = MyItem.item.profileImage;
         }
     }
 }

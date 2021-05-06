@@ -10,6 +10,8 @@ public class EnemyTeamHandeler : MonoBehaviour
 
     public void GenerateEnemyTeam()
     {
+        currentEnemyTeam.ClearTeam();
+
         int rng = Random.Range(0, possibleEnemyTeams.Count);
 
         TeamSO newTeam = possibleEnemyTeams[rng];

@@ -15,4 +15,13 @@ public class Team : MonoBehaviour
         Entity entity = gO.GetComponent<Entity>();
         _Team.Add(entity);
     }
+
+    public void ClearTeam()
+    {
+        foreach (Entity entity in _Team)
+        {
+            Destroy(entity.gameObject);
+        }
+        _team.Clear();
+    }
 }
